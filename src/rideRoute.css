@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: bisque;
+}
+
+#travel-date {
+    margin-bottom: 20px;
+}
+
+#map-data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#map-data-block {
+    background-color: white;
+}
+
+.btn {
+    text-align: center;
+    background-color: teal;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

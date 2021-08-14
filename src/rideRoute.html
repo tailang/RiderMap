@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add a line to a map using a GeoJSON source</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+    <link href="./rideRoute.css" rel="stylesheet" type="text/css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="map-data">
+        <div id='travel-date'>骑行日期：<input id='select-date' type="date"/>
+        </div>
+        <div id='map-data-block'>
+            <div>总距离：<span id='distance'></span></div>
+            <div>经度：<span id='lng'></span></div>
+            <div>纬度：<span id='lat'></span></div>
+            <div>海拔：<span id='ele'></span></div>
+        </div>
+        <button class="btn" id="delete-point">删除当前点</button>
+        <button class="btn" id="export-gpx">导出GPX文件</button>
+        <button class="btn" id="export-geo">导出GeoJson文件</button>
+    </div>
+    <script src="./plugins/FileSaver.js"></script>
+    <script src="./plugins/jquery.js"></script>
+    <script src="./plugins/togpx.js"></script>
+    <script src="./plugins/turf.js"></script>
+    <script src="./rideRoute.js"></script>
+</body>
+
+</html>
