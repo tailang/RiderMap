@@ -1,3 +1,4 @@
+// replace your mapbox token
 const mapbox_token = 'pk.eyJ1IjoidGFpbGFuZzExMTExIiwiYSI6ImNrczA0Y20xODFneDQyb24xMjVvbmpndXQifQ.6LFuup8DavaeXjCunLJPqg'
 const ID_NAME = 'route'
 const locationCenter = [120.19, 30.26] // Hangzhou
@@ -125,7 +126,7 @@ map.on('click', function (e) {
     _refreshDistance()
 })
 
-// 删除当前点
+// click delete point button
 $("#delete-point").click(function(){
     if (isFetchingEle) {
         alert('正在请求海拔数据，请稍等...')
