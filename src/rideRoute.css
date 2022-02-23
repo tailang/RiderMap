@@ -39,3 +39,9 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+#about {
+    margin-top: 10px;
+    font-size: medium;
+    color: black;
+}
