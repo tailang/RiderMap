@@ -191,7 +191,8 @@ function _refreshLnglat(lngLat) {
     }
 }
 
-// fetch elevation data by latitude and longitude
+// fetch elevation data by latitude and longitudell
+// loading toast
 function _fetchElevation(lngLat) {
     isFetchingEle = true
     var query = `https://api.mapbox.com/v4/mapbox.mapbox-terrain-v2/tilequery/${lngLat[0]},${lngLat[1]}.json?radius=10&access_token=${mapbox_token}`
