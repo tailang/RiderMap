@@ -1,3 +1,9 @@
+import mapboxgl from 'mapbox-gl'
+import * as turf from '@turf/turf'
+import $ from 'jquery'
+import { saveAs } from 'file-saver'
+import togpx from 'togpx'
+
 // replace your mapbox token
 const mapbox_token = 'pk.eyJ1IjoidGFpbGFuZzExMTExIiwiYSI6ImNrczA0Y20xODFneDQyb24xMjVvbmpndXQifQ.6LFuup8DavaeXjCunLJPqg'
 const ID_NAME = 'route'
@@ -199,7 +205,7 @@ function _fetchElevation(lngLat) {
     $.ajax({method: 'GET', url: query}).done(function(data) {
         var allFeatures = data.features
         var elevations = []
-        for (i = 0; i < allFeatures.length; i++) {
+        for (var i = 0; i < allFeatures.length; i++) {
             const ele = allFeatures[i].properties.ele
             console.log(`log: all eles: ${ele}`);
             if (ele || ele === 0) {

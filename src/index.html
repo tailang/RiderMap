@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add a line to a map using a GeoJSON source</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="map-data">
+        <div id='travel-date'>骑行日期：<input id='select-date' type="date"/>
+        </div>
+        <div id='map-data-block'>
+            <div>总距离：<span id='distance'></span></div>
+            <div>经度：<span id='lng'></span></div>
+            <div>纬度：<span id='lat'></span></div>
+            <div>海拔：<span id='ele'></span></div>
+        </div>
+        <button class="btn" id="delete-point">删除当前点</button>
+        <button class="btn" id="export-gpx">导出GPX文件</button>
+        <button class="btn" id="export-geo">导出GeoJson文件</button>
+        <a id="about" target="view_window" href="https://mp.weixin.qq.com/s?__biz=MzkxMjAxNDI1MQ==&mid=2247483670&idx=1&sn=4e2f27b594caa506eb16a558bc80260f&chksm=c1122fd2f665a6c469f0337850bbe2b03b60d480a22226fd3f9ba77727ee1d0170f2f795da59&token=18033804&lang=zh_CN#rd">如何使用</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "ridermap",
+  "version": "1.0.0",
+  "description": "这是一个采集骑行路线数据，并能导出GPX或GeoJson文件的小工具。",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tailang/RiderMap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tailang/RiderMap/issues"
+  },
+  "homepage": "https://github.com/tailang/RiderMap#readme",
+
+  "devDependencies": {
+    "mapbox-gl": "2.4.0",
+    "jquery": "3.6.0",
+    "@turf/turf": "6.5.0",
+    "togpx": "0.5.4",
+    "file-saver": "2.0.4",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
