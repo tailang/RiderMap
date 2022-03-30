@@ -1,6 +1,7 @@
 # RiderMap
-这是一个采集骑行路线数据，并能导出GPX或GeoJson文件的小工具。  
 
+这是一个采集骑行路线数据，并能导出GPX或GeoJson文件的小工具。  
+[RiderMap预览](https://gilded-crisp-12e99e.netlify.app/)
 ![map](./resources/map.png)  
 
 ## Why？
@@ -16,8 +17,13 @@
 const mapbox_token = '替换成你的token'
 ```
 
-#### 0x01 点击地图采集数据，导出文件
-clone项目，找到`rideRoute.html`,点击使用浏览器打开就可以开始采集数据了。
+#### 0x01 编译项目
+``` bash
+npm run build
+```
+
+#### 0x02 点击地图采集数据，导出文件
+在dist中找到index.html,用浏览器打开就可以使用了
 
 ## License
 MIT
