@@ -40,6 +40,17 @@ body {
     padding-bottom: 5px;
 }
 
+.subscribe {
+    text-align: center;
+    background-color: rgb(232, 185, 66);
+    color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #about {
     margin-top: 10px;
     font-size: medium;
